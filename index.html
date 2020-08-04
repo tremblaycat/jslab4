@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="container">
+      <p class="total">Total: $0</p>
       <button class="button" data-amount="2">Lime Cola $2.00</button>
       <button class="button" data-amount="3">
         Salted Peanuts $3.00
@@ -18,20 +19,19 @@
       <button class="button" data-amount="6">
         Fruit Gummies $6.00
       </button>
-      <p class="total"></p>
     </div>
 
     <form class="coin-form">
-      <label for="number">How many?</label>
+      <label for="amount">How many?</label>
       <input
-        type="number"
-        id="howmany"
+        type="text"
+        id="amount"
         placeholder="Enter a number..."
-        name="howmany"
+        name="amount"
       />
       <div>
-        <label for="coins">Which coin?</label>
-        <select name="coin" id="coin">
+        <label for="type">Which coin?</label>
+        <select name="type" id="type">
           <option data-value=".01" value="penny">Penny</option>
           <option data-value=".05" value="nickel">Nickel</option>
           <option data-value=".10" value="dime">Dime</option>
@@ -44,10 +44,10 @@
 
     <section>
       <div class="light-bulb-div">Light bulb</div>
-      <button class="on-button">On</button>
-      <button class="off-button">Off</button>
-      <button class="toggle-button">Toggle</button>
-      <button class="end-button">End</button>
+      <button class="on switch">On</button>
+      <button class="off switch">Off</button>
+      <button class="toggle switch">Toggle</button>
+      <button class="end switch">End</button>
     </section>
     <script src="script.js"></script>
   </body>
